@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>车辆日常通勤维护-手机表单</title>
+	<!--字段背景风格App模板-->
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+	
+	[#AWSImport]
+	[#AWSUIImport]
+	<script src="../apps/_bpm.portal/commom.form.js"></script>
+	
+	
+	<link rel='stylesheet' id='schemeCss' href='../apps/_bpm.platform/css/colorschemes/scheme_aws.css'  name='schemeCss'/>
+	<link rel="stylesheet" type="text/css" href="../apps/_bpm.portal/css/client.bpm.form.mobile.common.css?v=1588908698315">
+	<link rel="stylesheet" type="text/css" href="../apps/com.actionsoft.apps.form.theme.antdui/css/theme/antdui.css?v=1589851448797">
+<link type='text/css' rel='stylesheet' id='themeCss' href='../apps/com.actionsoft.apps.form.theme.antdui/css/theme/theme_m.css' name='themeCss'/>
+</head>
+<body>
+<form id="frmMain" name="frmMain" method="post">
+<div id="aws-form-container" border="0" style="width: 100%; border: 0px;">
+<table id="aws-form-maintable" style="table-layout: auto; width: 100%; border: 0px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="aws-form-titlebg" class="aws-form-ux-titlebg" style="display: none;">
+<td id="aws-form-title" class="aws-form-ux-header">车辆日常通勤维护</td>
+</tr>
+<tr class="aws-form-ux-formcontent" id="aws-form-formcontent">
+<td>
+<table id="table_container" class="awsui-ux table-striped" style="padding: 0px;" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="APPDATELabel" for="APPDATE" flag="labelRequired">申请日期</label></td>
+<td class="aws-form-ux-content">[#APPDATE]</td>
+</tr>
+<tr id="c994c85a_51b0_0001_2ace_131615002760">
+<td class="awsui-ux-title" style="padding-left: 0px;">申请单位</td>
+<td class="aws-form-ux-content">[#APPUSERUNIT]</td>
+</tr>
+<tr id="c994c85c_2ff0_0001_a49c_deb2148014c4">
+<td class="awsui-ux-title" style="padding-left: 0px;">申请部门</td>
+<td class="aws-form-ux-content">[#APPUSERDEPT]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="APPUSERLabel" for="APPUSER" flag="labelRequired">申请人</label></td>
+<td class="aws-form-ux-content">[#APPUSER]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="USERMOBILELabel" for="USERMOBILE">联系电话</label></td>
+<td class="aws-form-ux-content">[#USERMOBILE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CARNOLabel" for="CARNO" flag="labelRequired">车辆牌号</label></td>
+<td class="aws-form-ux-content">[#CARNO]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CARTYPELabel" for="CARTYPE" flag="labelRequired">车辆类型</label></td>
+<td class="aws-form-ux-content">[#CARTYPE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="BUSITYPELabel" for="BUSITYPE" flag="labelRequired">业务类型</label></td>
+<td class="aws-form-ux-content">[#BUSITYPE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TQBGTIMELabel" for="TQBGTIME" flag="labelRequired">开始时间</label></td>
+<td class="aws-form-ux-content">[#TQBGTIME]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TQEDTIMELabel" for="TQEDTIME" flag="labelRequired">预计结束时间</label></td>
+<td class="aws-form-ux-content">[#TQEDTIME]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CCSLMSLabel" for="CCSLMS" flag="labelRequired">出车时路码</label></td>
+<td class="aws-form-ux-content">[#CCSLMS]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="FHSLMSLabel" for="FHSLMS" flag="labelRequired">返回路码</label></td>
+<td class="aws-form-ux-content">[#FHSLMS]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TCFLabel" for="TCF" flag="labelRequired">停车费</label></td>
+<td class="aws-form-ux-content">[#TCF]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="GLFLabel" for="GLF" flag="labelRequired">路桥费</label></td>
+<td class="aws-form-ux-content">[#GLF]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="QTMONEYLabel" for="QTMONEY" flag="labelRequired">其他费用</label></td>
+<td class="aws-form-ux-content">[#QTMONEY]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="MEMOLabel" for="MEMO">备注</label></td>
+<td class="aws-form-ux-content">[#MEMO]</td>
+</tr>
+<tr id="c9995b36_f450_0001_6640_b0801c2617b5" style="display: none;">
+<td class="awsui-ux-title" style="padding-left: 0px;">班组</td>
+<td class="aws-form-ux-content">[#GROUPNO]</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="aws-form-bottom">
+<td class="aws-form-ux-bottom aws-form-ux-actionsoft">[#Actionsoft]</td>
+</tr>
+</tbody>
+</table>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/commom.form.js?v=1589851448822"></script>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/antdui.js?v=1589851448822"></script>
+</div>
+</form>
+<script>
+AWSFormMainAPI.customCloseFormPage(function(){
+    //自己处理当前的窗口如何的代码
+    var url=localStorage.getItem("backUrl");
+    location.href=url;
+    return true;//最后返回true
+});
+</script>
+<script id="formOnload">// <![CDATA[
+function formOnload(){
+   $("#BTN_SAVE").parent().hide();
+}
+// ]]></script>
+</body>
+</html>

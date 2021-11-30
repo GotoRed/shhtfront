@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>访客车辆明细</title>
+	<!--字段背景风格App模板-->
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+	
+	[#AWSImport]
+	<link type='text/css' rel='stylesheet' href='../apps/_bpm.platform/css/colorschemes/scheme_aws.css?v=1588908694729'  name='schemeCss'/>
+	<link type='text/css' rel='stylesheet' href='../apps/_bpm.platform/css/theme/theme_m.css?v=1521618657000' name='themeCss'/>
+	<link type='text/css' rel='stylesheet' href='../apps/com.actionsoft.apps.form.theme.antdui/css/theme/theme_m.css?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798?v=1589851448798' name='themeCss'/>
+	<link rel="stylesheet" type="text/css" href="../apps/com.actionsoft.apps.form.theme.antdui/css/theme/antdui.css?v=1589851448797">
+	[#AWSImport]
+	[#AWSUIImport]
+	<style>
+		.mui-bar-tab {
+			height: 74px;
+		}
+	</style>
+<link type='text/css' rel='stylesheet' id='themeCss' href='../apps/com.actionsoft.apps.form.theme.antdui/css/theme/theme_m.css' name='themeCss'/>
+</head>
+<body style="overflow: hidden;">
+<form id="frmMain" name="frmMain" method="post" action="./w">
+<div class="awsui-toolbar" border="0">[#ToolBar]</div>
+<div id="aws-form-container" class="aws-form-ux-container" border="0" style="min-width: 100%;">
+<div id="FormGridRowPage" border="0" style="overflow: auto; width: 100%; margin-bottom: 70px;">
+<table id="aws-form-maintable" class="awsui-ux aws-form-ux-maintable" style="min-width: 100%;" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="aws-form-titlebg" class="aws-form-ux-titlebg">
+<td id="aws-form-title" class="aws-form-ux-header">访客车辆信息申请</td>
+</tr>
+<tr id="aws-form-titlebg2" class="aws-form-ux-titlebg">
+<td class="awsui-ux-title" style="padding-left: 0px; text-align: center;"><span style="color: #cc0000;">特斯拉品牌车辆暂不受理该业务</span></td>
+</tr>
+<tr class="aws-form-ux-formcontent" id="aws-form-formcontent" style="min-width: 100%;">
+<td>
+<table id="table_container" class="awsui-ux table-striped" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CARNOLabel" for="CARNO" flag="labelRequired">车牌号</label></td>
+<td class="aws-form-ux-content">[#CARNO]</td>
+</tr>
+<tr id="c990fd6c_2810_0001_cfef_dfb210c080f0">
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CARTYPELabel" for="CARTYPE" flag="labelRequired">车辆类型</label></td>
+<td class="aws-form-ux-content">[#CARTYPE]</td>
+</tr>
+<tr id="c990fd6e_40b0_0001_e7da_2f9414203070">
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="CAIPINPAILabel" for="CAIPINPAI" flag="labelRequired">车辆品牌</label></td>
+<td class="aws-form-ux-content">[#CAIPINPAI]</td>
+</tr>
+<tr id="c990fd6f_51c0_0001_404e_b6af93692d70">
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="INOUTDOORLabel" for="INOUTDOOR" flag="labelRequired">进出门牌</label></td>
+<td class="aws-form-ux-content">[#INOUTDOOR]</td>
+</tr>
+<tr id="c989f333_dde0_0001_5b20_1a701d107370">
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="INPARKDATELabel" for="INPARKDATE" flag="labelRequired">进入日期</label></td>
+<td class="aws-form-ux-content">[#INPARKDATE]</td>
+</tr>
+<tr id="c989f334_b7e0_0001_3670_eab0d8ae8f60">
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="OUTPARKDATELabel" for="OUTPARKDATE" flag="labelRequired">结束日期</label></td>
+<td class="aws-form-ux-content">[#OUTPARKDATE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label id="VISITORUNITLabel" class="aws-form-ux-label" for="VISITORUNIT">访客单位</label></td>
+<td class="aws-form-ux-content">[#VISITORUNIT]</td>
+</tr>
+<tr class="tr1" style="display: none;">
+<td colspan="2" class="aws-form-ux-gridbg">[#Grid1]</td>
+</tr>
+<tr class="tr1" style="display: none;">
+<td colspan="2" class="aws-form-ux-gridbg">[#Grid2]</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="aws-form-bottom">
+<td class="aws-form-ux-bottom aws-form-ux-actionsoft">[#Actionsoft]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/commom.form.js?v=1589851448822"></script>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/antdui.js?v=1589851448822"></script>
+<script>
+ function datelimit_in(){
+	var date_b=new Date(ui('OUTPARTTIME'));
+	
+	var date_a = new Date(ui('INPARTTIME'));
+	
+    var in_time = new Date(ui('INPARKDATE'));
+    var out_time = new Date(ui('OUTPARKDATE'));
+    console.log(date_b);
+    console.log(date_a);
+    console.log("########");
+    console.log(in_time);
+    console.log(out_time);
+	if(out_time.getTime()<in_time.getTime()){
+		mui.alert("结束时间不能小于开始时间，请确认！");
+		$('#INPARKDATE').val("");
+		return false;
+	}
+	if(in_time.getTime()<date_a.getTime()||in_time.getTime()>date_b.getTime()){
+		mui.alert("车辆访问时间不能超过人员访问时间范围！");
+		$('#INPARKDATE').val("");
+		return false;
+	}	
+}
+  function datelimit_out(){
+	var date_b=new Date(ui('OUTPARTTIME'));
+	
+	var date_a = new Date(ui('INPARTTIME'));
+	
+    var in_time = new Date(ui('INPARKDATE'));
+    var out_time = new Date(ui('OUTPARKDATE'));
+	if(out_time.getTime()<in_time.getTime()){
+		mui.alert("结束时间不能小于开始时间，请确认！");
+		$('#OUTPARTTIME').val("");
+		return false;
+	}
+	if(out_time.getTime()<date_a.getTime()||out_time.getTime()>date_b.getTime()){
+		mui.alert("车辆访问时间不能超过人员访问时间范围！");
+		$('#OUTPARTTIME').val("");
+		return false;
+	}	
+  }
+</script>
+</div>
+[#operateButtons]</form>
+<div id="boItemNameSearch_div" class="mui-search-div" border="0" style="display: none;"></div>
+</body>
+</html>

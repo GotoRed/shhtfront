@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>院部业务保障用车-日行车任务</title>
+	<!--字段背景风格App模板-->
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	[#AWSImport]
+	[#AWSUIImport]
+	
+	
+	<link rel='stylesheet' id='schemeCss' href='../apps/_bpm.platform/css/colorschemes/scheme_1.css' name='schemeCss'/>
+	<link rel="stylesheet" type="text/css" href="../apps/com.actionsoft.apps.form.theme.antdui/css/theme/antdui.css?v=1589851448797">
+<link type='text/css' rel='stylesheet' id='themeCss' href='../apps/com.actionsoft.apps.form.theme.antdui/css/theme/theme.css' name='themeCss'/>
+</head>
+<body>
+<form id="frmMain" name="frmMain" method="post">
+<div id="aws-form-container" class="aws-form-ux-container" border="0">
+<table id="aws-form-maintable" class="awsui-ux aws-form-ux-maintable" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="aws-form-titlebg" class="aws-form-ux-titlebg">
+<td id="aws-form-title" class="aws-form-ux-header">院部业务保障用车-日行车任务</td>
+</tr>
+<!--电子政务-->
+<tr class="aws-form-ux-formcontent" id="aws-form-formcontent">
+<td>
+<table id="table_container" class="awsui-ux" width="100%" cellspacing="0" border="0" cellpadding="0"><colgroup><col class="awsui-ux-title" /><col style="width: 50.0%;" /><col class="awsui-ux-title" /><col style="width: 50.0%;" /></colgroup>
+<tbody>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="APPLYUSERNAME">预订人</label></td>
+<td class="aws-form-ux-content">[#APPLYUSERNAME]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="APPLYUSERMOBILE">预订人手机</label></td>
+<td class="aws-form-ux-content">[#APPLYUSERMOBILE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="APPLYUID">预定人账号</label></td>
+<td class="aws-form-ux-content">[#APPLYUID]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="USEDATE">用车时间</label></td>
+<td class="aws-form-ux-content">[#USEDATE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="VEHICLETYPE">车辆类型</label></td>
+<td class="aws-form-ux-content">[#VEHICLETYPE]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="CONTACTPERSON">用车联系人</label></td>
+<td class="aws-form-ux-content">[#CONTACTPERSON]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="CONTACTPHONE">联系人手机</label></td>
+<td class="aws-form-ux-content">[#CONTACTPHONE]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="BOARDINGPLACE">上车地点</label></td>
+<td class="aws-form-ux-content">[#BOARDINGPLACE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="TARGETPLACE">目的地</label></td>
+<td class="aws-form-ux-content">[#TARGETPLACE]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="CPH">车牌号</label></td>
+<td class="aws-form-ux-content">[#CPH]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="SJXM">司机姓名</label></td>
+<td class="aws-form-ux-content">[#SJXM]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="SJZH">司机账号</label></td>
+<td class="aws-form-ux-content">[#SJZH]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="MISSIONSTATUS">任务单状态</label></td>
+<td class="aws-form-ux-content">[#MISSIONSTATUS]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="CCSLMS">出车时路码</label></td>
+<td class="aws-form-ux-content">[#CCSLMS]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="CFSJ">出车时间</label></td>
+<td class="aws-form-ux-content">[#CFSJ]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="ISLEAVESTAY">是否出差过夜</label></td>
+<td class="aws-form-ux-content">[#ISLEAVESTAY]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="FHSLMS">返回路码</label></td>
+<td class="aws-form-ux-content">[#FHSLMS]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="FHSJ">返回时间</label></td>
+<td class="aws-form-ux-content">[#FHSJ]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="TCF">停车费</label></td>
+<td class="aws-form-ux-content">[#TCF]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="GLF">路桥费</label></td>
+<td class="aws-form-ux-content">[#GLF]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="STAYMONEY">住宿费</label></td>
+<td class="aws-form-ux-content">[#STAYMONEY]</td>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="QTMONEY">其他费用</label></td>
+<td class="aws-form-ux-content">[#QTMONEY]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label class="aws-form-ux-label" for="FUWUMANYIDU">服务满意度</label></td>
+<td class="aws-form-ux-content">[#FUWUMANYIDU]</td>
+<td class="awsui-ux-title"></td>
+<td class="aws-form-ux-content"></td>
+</tr>
+<tr>
+<td class="awsui-ux-title"><label id="RUNLINELabel" class="aws-form-ux-label" for="RUNLINE">用车路线</label></td>
+<td class="aws-form-ux-content">[#RUNLINE]</td>
+<td class="awsui-ux-title"><label id="NOTELabel" class="aws-form-ux-label" for="NOTE">备注</label></td>
+<td class="aws-form-ux-content">[#NOTE]</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id="aws-form-bottom">
+<td class="aws-form-ux-bottom aws-form-ux-actionsoft">[#Actionsoft]</td>
+</tr>
+</tbody>
+</table>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/commom.form.js?v=1589851448822"></script>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/antdui.js?v=1589851448822"></script>
+</div>
+</form>
+</body>
+</html>

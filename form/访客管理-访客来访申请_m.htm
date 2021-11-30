@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>航天园区访客来访申请</title>
+	<!--字段背景风格App模板-->
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+	
+	[#AWSImport]
+	[#AWSUIImport]
+	<script src="../apps/_bpm.portal/commom.form.js"></script>
+	
+	
+	<link rel='stylesheet' id='schemeCss' href='../apps/_bpm.platform/css/colorschemes/scheme_aws.css'  name='schemeCss'/>
+	<link rel="stylesheet" type="text/css" href="../apps/_bpm.portal/css/client.bpm.form.mobile.common.css?v=1588908698315">
+	<link rel="stylesheet" type="text/css" href="../apps/com.actionsoft.apps.form.theme.antdui/css/theme/antdui.css?v=1589851448797">
+<link type='text/css' rel='stylesheet' id='themeCss' href='../apps/com.actionsoft.apps.form.theme.antdui/css/theme/theme_m.css' name='themeCss'/>
+</head>
+<body>
+<form id="frmMain" name="frmMain" method="post">
+<div id="aws-form-container" border="0" style="width: 100%; border: 0px; text-align: center;"><span style="color: #ff3333; font-size: 16px;"><strong>本系统为非密系统，严禁上传涉密信息！</strong></span>
+<table id="aws-form-maintable" style="table-layout: auto; width: 100%; border: 0px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="aws-form-titlebg" class="aws-form-ux-titlebg" style="display: none;">
+<td id="aws-form-title" class="aws-form-ux-header">访客来访申请</td>
+</tr>
+<tr class="aws-form-ux-formcontent" id="aws-form-formcontent">
+<td class="">
+<table id="table_container" class="awsui-ux table-striped" style="padding: 0px;" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TARGETUNITLabel" for="TARGETUNIT" flag="labelRequired">被访单位</label></td>
+<td class="aws-form-ux-content">[#TARGETUNIT]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TARGETDEPTLabel" for="TARGETDEPT" flag="labelRequired">被访部门</label></td>
+<td class="aws-form-ux-content">[#TARGETDEPT]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TARGETMANLabel" for="TARGETMAN" flag="labelRequired">接待人员</label></td>
+<td class="aws-form-ux-content">[#TARGETMAN]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="TARGETMANPHONELabel" for="TARGETMANPHONE" flag="labelRequired">接待员电话</label></td>
+<td class="aws-form-ux-content">[#TARGETMANPHONE]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="VISITORUNITLabel" for="VISITORUNIT" flag="labelRequired">访客单位</label></td>
+<td class="aws-form-ux-content">[#VISITORUNIT]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="REASONLabel" for="REASON" flag="labelRequired">来访事由</label></td>
+<td class="aws-form-ux-content">[#REASON]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="INPARTTIMELabel" for="INPARTTIME" flag="labelRequired">来访日期</label></td>
+<td class="aws-form-ux-content">[#INPARTTIME]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="OUTPARTTIMELabel" for="OUTPARTTIME" flag="labelRequired">离开日期</label></td>
+<td class="aws-form-ux-content">[#OUTPARTTIME]</td>
+</tr>
+<tr>
+<td class="awsui-ux-title" style="padding-left: 0px;"><label id="MEMOLabel" for="MEMO">备注</label></td>
+<td class="aws-form-ux-content">[#MEMO]</td>
+</tr>
+<tr style="display: none;">
+<td class="awsui-ux-title"><label id="VISITTYPELabel" class="aws-form-ux-label" for="VISITTYPE" flag="labelRequired">来访类型</label></td>
+<td class="aws-form-ux-content">[#VISITTYPE]</td>
+</tr>
+<tr class="tr1">
+<td colspan="2" class="aws-form-ux-gridbg">[#Grid1]</td>
+</tr>
+<tr>
+<td colspan="2" class="aws-form-ux-gridbg">[#Grid2]</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="aws-form-bottom">
+<td class="aws-form-ux-bottom aws-form-ux-actionsoft">[#Actionsoft]
+<div id="hiddenArea" border="0" style="display: none;">[#TARGETMANUID][#VISITORCARS][#VISITORNUM]</div>
+</td>
+</tr>
+</tbody>
+</table>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/commom.form.js?v=1589851448822"></script>
+<script src="../apps/com.actionsoft.apps.form.theme.antdui/js/antdui.js?v=1589851448822"></script>
+<script src="../awsht804system/lib/common/js/common.ht.util.runtime.js?v=1591422899197" type="text/javascript" charset="utf-8"></script>
+</div>
+</form>
+<script id="formSave">
+function formSave(isTransact){
+	}
+</script>
+<script>// <![CDATA[
+AWSFormMainAPI.customCloseFormPage(function(){
+        var  userTaskDefId = $('#userTaskDefId').val();
+		if(userTaskDefId=='obj_c970323398a000012e681a307740e300'||userTaskDefId=='obj_c96b8faf04200001554411a9159c15af'){
+        var url=localStorage.getItem("backUrl");
+       console.log(url);
+  	
+     if(url==""|| typeof(url)=="undefined"||url==null){
+        window.location.href = '../awsht804system/app/tslc/visitorsuccess.html';
+    }else{
+        location.href=url;
+    }
+    
+    return true;//最后返回trueue
+			
+		}		  
+	});
+// ]]></script>
+<script>// <![CDATA[
+function datelimit_a(){
+	var date_b=new Date($('#OUTPARTTIME').val());
+	var day_b = date_b.getDate();
+	var date_a = new Date($('#INPARTTIME').val());
+	var day_a = date_a.getDate();
+  	var myDate = new Date();
+  	console.log(date_a.getTime());
+  	console.log(date_b.getTime());
+    if(Number(day_a) < Number(myDate.getDate())){
+       mui.alert("访问开始日期不能小于今天，请确认！");
+       $('#INPARTTIME').val("");
+  		return false;
+       }
+  	
+	if(date_b.getTime()+1<date_a.getTime()+1){
+		mui.alert("访问结束时间不能小于开始时间，请确认！");
+		$('#INPARTTIME').val("");
+		return false;
+	}
+	if((date_b.getTime()-date_a.getTime())>=5*24*3600*1000){
+		mui.alert("访问最长时间不能超过五天，请确认！");
+		$('#INPARTTIME').val("");
+		return false;
+	}
+  	if((date_b.getTime()-date_a.getTime())>=24*3600*1000){
+	ui("VISITTYPE", "短期");
+      return true;
+	}else {
+      ui("VISITTYPE", "单日");
+      return true;
+    }
+}
+  function datelimit_b(){
+	var date_b=new Date($('#OUTPARTTIME').val());
+	var day_b = date_b.getDate();
+	var date_a = new Date($('#INPARTTIME').val());
+	var day_a = date_a.getDate();
+    console.log(date_a.getTime());
+  	console.log(date_b.getTime());
+  	
+	if(date_b.getTime()+1<date_a.getTime()+1){
+		mui.alert("访问结束时间不能小于开始时间，请确认！");
+		$('#OUTPARTTIME').val("");
+		return false;
+	}
+	if((date_b.getTime()-date_a.getTime())>=5*24*3600*1000){
+		mui.alert("访问最长时间不能超过5天，请确认！");
+		$('#OUTPARTTIME').val("");
+		return false;
+	}
+      	if((date_b.getTime()-date_a.getTime())>=24*3600*1000){
+		
+          ui("VISITTYPE", "短期");
+          return true;
+	}else {
+     ui("VISITTYPE", "单日");
+      return true;
+    }
+}
+// ]]></script>
+<script id="formOnload">// <![CDATA[
+function formOnload(){
+//  $("#VISITTYPE").val("短期");
+  var userTaskDefId =  $("#userTaskDefId").val();
+  $("#BTN_SAVE").parent().hide();//隐藏表单上的保存按钮
+  /*
+  if(userTaskDefId==obj_c96b8faf04200001554411a9159c15af){
+            $("#dialog-normal").dialog({
+            height:200,
+            buttons:[
+                {
+                    text: '同意', cls: "blue", handler: function () {
+                        $("#dialog-insert").dialog("close");
+                    }
+                }
+            ]
+        });
+  }
+  */
+  if(userTaskDefId=='obj_c96b8faf04200001554411a9159c15af'){
+     $('#ToolBarContent-d63edb75-e269-49d6-b119-11dd95ee2755 td').find('.form-grid-mobile-common-toolbar').eq(1).hide();
+  $('#ToolBarContent-d26989d8-09c2-464a-9efc-217dbe6645e5 td').find('.form-grid-mobile-common-toolbar').eq(1).hide();
+     }
+  var userId = getQueryString("userId");
+  console.log("cddf");
+ awsui.ajax.request({
+          url: "./jd",
+          method: "POST",
+          async: false,
+          dataType: "json",
+          data: {
+            userId: userId,
+            cmd: "com.awspaas.user.apps.shhtaerospaceindustrial_getVisitedObjectInfo"
+          },
+          success: function (res) {
+            console.log(res);
+            ui("TARGETUNIT", res.companyname);
+            ui("TARGETDEPT", res.departmentname);
+            ui("TARGETMAN", res.name);
+            ui("TARGETMANPHONE", res.mobile);
+          }
+        });
+}
+// ]]></script>
+</body>
+</html>
